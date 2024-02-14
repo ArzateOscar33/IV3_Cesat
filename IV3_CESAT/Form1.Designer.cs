@@ -32,17 +32,22 @@
             this._pictureBox = new System.Windows.Forms.PictureBox();
             this.timer_camara = new System.Windows.Forms.Timer(this.components);
             this.label_ok = new System.Windows.Forms.Label();
-            this.txbIpMaestro = new System.Windows.Forms.TextBox();
-            this.txbIpCamara = new System.Windows.Forms.TextBox();
             this.label_error = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label_programa = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.label_programa = new System.Windows.Forms.Label();
+            this._textBoxPortNo = new System.Windows.Forms.TextBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this._maskedTextBoxIpAddress = new System.Windows.Forms.MaskedTextBox();
+            this.lblIPMaestro = new System.Windows.Forms.Label();
+            this.no_port = new System.Windows.Forms.Label();
+            this._maskedTextBoxIpAddressCamara = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this._pictureBox)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // _pictureBox
@@ -61,31 +66,16 @@
             // label_ok
             // 
             this.label_ok.AutoSize = true;
-            this.label_ok.Location = new System.Drawing.Point(14, 32);
+            this.label_ok.Location = new System.Drawing.Point(246, 32);
             this.label_ok.Name = "label_ok";
-            this.label_ok.Size = new System.Drawing.Size(106, 13);
+            this.label_ok.Size = new System.Drawing.Size(22, 13);
             this.label_ok.TabIndex = 1;
-            this.label_ok.Text = "Direccion IP Maestro";
-            // 
-            // txbIpMaestro
-            // 
-            this.txbIpMaestro.Location = new System.Drawing.Point(17, 48);
-            this.txbIpMaestro.Name = "txbIpMaestro";
-            this.txbIpMaestro.Size = new System.Drawing.Size(151, 20);
-            this.txbIpMaestro.TabIndex = 2;
-            // 
-            // txbIpCamara
-            // 
-            this.txbIpCamara.Location = new System.Drawing.Point(201, 48);
-            this.txbIpCamara.Name = "txbIpCamara";
-            this.txbIpCamara.Size = new System.Drawing.Size(156, 20);
-            this.txbIpCamara.TabIndex = 3;
-            this.txbIpCamara.Text = "169, 254, 109, 199";
+            this.label_ok.Text = "OK";
             // 
             // label_error
             // 
             this.label_error.AutoSize = true;
-            this.label_error.Location = new System.Drawing.Point(218, 32);
+            this.label_error.Location = new System.Drawing.Point(25, 55);
             this.label_error.Name = "label_error";
             this.label_error.Size = new System.Drawing.Size(104, 13);
             this.label_error.TabIndex = 4;
@@ -93,17 +83,29 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label_programa);
-            this.groupBox1.Controls.Add(this.txbIpMaestro);
+            this.groupBox1.Controls.Add(this._maskedTextBoxIpAddressCamara);
+            this.groupBox1.Controls.Add(this.no_port);
+            this.groupBox1.Controls.Add(this.lblIPMaestro);
+            this.groupBox1.Controls.Add(this._maskedTextBoxIpAddress);
+            this.groupBox1.Controls.Add(this._textBoxPortNo);
             this.groupBox1.Controls.Add(this.label_error);
             this.groupBox1.Controls.Add(this.label_ok);
-            this.groupBox1.Controls.Add(this.txbIpCamara);
-            this.groupBox1.Location = new System.Drawing.Point(12, 25);
+            this.groupBox1.Location = new System.Drawing.Point(12, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(390, 100);
+            this.groupBox1.Size = new System.Drawing.Size(390, 122);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Control Direcciones IP";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label_programa
+            // 
+            this.label_programa.AutoSize = true;
+            this.label_programa.Location = new System.Drawing.Point(302, 287);
+            this.label_programa.Name = "label_programa";
+            this.label_programa.Size = new System.Drawing.Size(71, 13);
+            this.label_programa.TabIndex = 5;
+            this.label_programa.Text = "NO.Programa";
             // 
             // btnStart
             // 
@@ -136,14 +138,50 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label_programa
+            // _textBoxPortNo
             // 
-            this.label_programa.AutoSize = true;
-            this.label_programa.Location = new System.Drawing.Point(132, 16);
-            this.label_programa.Name = "label_programa";
-            this.label_programa.Size = new System.Drawing.Size(104, 13);
-            this.label_programa.TabIndex = 5;
-            this.label_programa.Text = "Direccion IP Camara";
+            this._textBoxPortNo.Location = new System.Drawing.Point(201, 74);
+            this._textBoxPortNo.Name = "_textBoxPortNo";
+            this._textBoxPortNo.Size = new System.Drawing.Size(151, 20);
+            this._textBoxPortNo.TabIndex = 6;
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
+            // _maskedTextBoxIpAddress
+            // 
+            this._maskedTextBoxIpAddress.Location = new System.Drawing.Point(17, 32);
+            this._maskedTextBoxIpAddress.Mask = "000 . 000 . 000 . 000 ";
+            this._maskedTextBoxIpAddress.Name = "_maskedTextBoxIpAddress";
+            this._maskedTextBoxIpAddress.Size = new System.Drawing.Size(151, 20);
+            this._maskedTextBoxIpAddress.TabIndex = 8;
+            // 
+            // lblIPMaestro
+            // 
+            this.lblIPMaestro.AutoSize = true;
+            this.lblIPMaestro.Location = new System.Drawing.Point(14, 16);
+            this.lblIPMaestro.Name = "lblIPMaestro";
+            this.lblIPMaestro.Size = new System.Drawing.Size(106, 13);
+            this.lblIPMaestro.TabIndex = 9;
+            this.lblIPMaestro.Text = "Direccion IP Maestro";
+            // 
+            // no_port
+            // 
+            this.no_port.AutoSize = true;
+            this.no_port.Location = new System.Drawing.Point(218, 55);
+            this.no_port.Name = "no_port";
+            this.no_port.Size = new System.Drawing.Size(55, 13);
+            this.no_port.TabIndex = 10;
+            this.no_port.Text = "No.Puerto";
+            // 
+            // _maskedTextBoxIpAddressCamara
+            // 
+            this._maskedTextBoxIpAddressCamara.Location = new System.Drawing.Point(17, 74);
+            this._maskedTextBoxIpAddressCamara.Mask = "000 . 000 . 000 . 000 ";
+            this._maskedTextBoxIpAddressCamara.Name = "_maskedTextBoxIpAddressCamara";
+            this._maskedTextBoxIpAddressCamara.Size = new System.Drawing.Size(151, 20);
+            this._maskedTextBoxIpAddressCamara.TabIndex = 11;
             // 
             // Form1
             // 
@@ -153,6 +191,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this._pictureBox);
+            this.Controls.Add(this.label_programa);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -160,7 +199,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -169,14 +210,18 @@
         private System.Windows.Forms.PictureBox _pictureBox;
         private System.Windows.Forms.Timer timer_camara;
         private System.Windows.Forms.Label label_ok;
-        private System.Windows.Forms.TextBox txbIpMaestro;
-        private System.Windows.Forms.TextBox txbIpCamara;
         private System.Windows.Forms.Label label_error;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label_programa;
+        private System.Windows.Forms.TextBox _textBoxPortNo;
+        private System.Windows.Forms.ErrorProvider errorProvider;
+        private System.Windows.Forms.MaskedTextBox _maskedTextBoxIpAddress;
+        private System.Windows.Forms.Label no_port;
+        private System.Windows.Forms.Label lblIPMaestro;
+        private System.Windows.Forms.MaskedTextBox _maskedTextBoxIpAddressCamara;
     }
 }
 
