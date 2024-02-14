@@ -1,0 +1,1382 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Keyence.IV3.Sdk</name>
+  </assembly>
+  <members>
+    <member name="T:Keyence.IV3.Sdk.OcrToolSetting">
+      <summary xml:lang="en"> This class represents the ocr setting of the tool. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ToolSettingBase">
+      <summary xml:lang="en"> This class represents tool settings. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolSettingBase.MaxValue">
+      <summary xml:lang="en"> Acquires a maximum value of tool result value. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolSettingBase.MinValue">
+      <summary xml:lang="en"> Acquires a minimum value of tool result value. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolSettingBase.OkMaxValue">
+      <summary xml:lang="en"> Acquires an upper limit of tool result value. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolSettingBase.OkMinValue">
+      <summary xml:lang="en"> Acquires a lower limit of tool result value. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolSettingBase.ToolName">
+      <summary xml:lang="en"> Acquires a tool name. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolSettingBase.ToolWindow">
+      <summary xml:lang="en"> Acquires a tool window. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolSettingBase.ToolType">
+      <summary xml:lang="en"> Acquires a tool type string from "Outline", "PositionAdjust", "MonochromeArea", "ColorArea", "EdgePixels", "Width", "Diameter", "Edge", "Pitch", "1AxisAdjustment", "2AxisAdjustment", "Ocr", "Learn-Window", "BrightnessAverage", "ColorAverage", "BrightnessProhibit", "ColorProhibit", "BLOB" or "". </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolSettingBase.MultiToolWindow">
+      <summary xml:lang="en"> Acquires several tool windows. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolSettingBase.Scaling">
+      <summary xml:lang="en"> Acquires the scaling setting of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.MaxValue">
+      <summary xml:lang="en"> Acquires a maximum value of tool result value. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.MinValue">
+      <summary xml:lang="en"> Acquires a minimum value of tool result value. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.OkMaxValue">
+      <summary xml:lang="en"> Acquires an upper limit of tool result value. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.OkMinValue">
+      <summary xml:lang="en"> Acquires a lower limit of tool result value. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.ToolName">
+      <summary xml:lang="en"> Acquires a tool name. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.ToolWindow">
+      <summary xml:lang="en"> Acquires a tool window. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.ToolType">
+      <summary xml:lang="en"> Acquires a tool type string from "Outline", "PositionAdjust", "MonochromeArea", "ColorArea", "EdgePixels", "Width", "Diameter", "Edge", "Pitch", "1AxisAdjustment", "2AxisAdjustment" or "". </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.MultiToolWindow">
+      <summary xml:lang="en"> Acquires several tool windows. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.Scaling">
+      <summary xml:lang="en"> Acquires the scaling setting of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrToolSetting.OcrTargetType">
+      <summary xml:lang="en"> Acquires the read target setting of the OCR. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.MultiWindowShape">
+      <summary xml:lang="en"> This class represents window shapes. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.MultiWindowShape.Enabled">
+      <summary xml:lang="en"> Acquires if several tool windows are valid or not. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.MultiWindowShape.ToolWindow1">
+      <summary xml:lang="en"> Acquires tool window 1. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.MultiWindowShape.ToolWindow2">
+      <summary xml:lang="en"> Acquires tool window 2. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.PointN">
+      <summary>tsPOINTN</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.EdgePresenceMatchPercentLimitSetting">
+      <summary>teEDGEPRESENCE_MATCHPERCENTLIMITSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.TwoAxesPosAdjustResult">
+      <summary>tsTWOAXESPOSADJUSTRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OneOfTwoAxesRegisterSetting">
+      <summary>tsONEOFTWOAXESREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrResultPoints">
+      <summary>tsOCR_RESULT_POINTS</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgePresenceSensorResult">
+      <summary>tsEDGEPRESENCESENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.DiameterSensorResult">
+      <summary>tsDIAMETERSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ColorAveSensorSetting">
+      <summary>tsCOLORAVE_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.FileAccess">
+      <summary>tsFILE_ACCESS</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.ImageSize">
+      <summary>tsIMAGE_SIZE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.FieldNetworkConfig">
+      <summary>tsFieldNetworkConfig</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.WriteBalance">
+      <summary>tsWHITEBALANCE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.InOutSetting">
+      <summary>tsIN_OUT_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.Image">
+      <summary xml:lang="en"> This class represents an Image acquired by the Sensor. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Image.Region">
+      <summary xml:lang="en"> Acquires the Rectangle that contains the offset from the CMOS origin and image size. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Image.ByteData">
+      <summary xml:lang="en"> Acquires image data as byte array. The size of the array is always 1280x960x3(BGR order) regardless of Region property values. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ToolResultUpdatedEventHandler">
+      <summary xml:lang="en"> This delegate represents a signature of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ResultUpdated" /> event handler. </summary>
+      <param name="sender" xml:lang="en"> The source of the event. </param>
+      <param name="e" xml:lang="en"> An argument of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ResultUpdated" /> event that includes tool result. </param>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ToolResultUpdatedEventArgs">
+      <summary xml:lang="en"> This class represents an argument of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ResultUpdated" /> event. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.IPossiblyUpdated">
+      <summary xml:lang="en"> This interface represents a possibly updated property. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IPossiblyUpdated.PropetyList">
+      <summary xml:lang="en"> Acquires the array of the property name of <see cref="T:Keyence.IV3.Sdk.IVisionSensor" /> object that could have been changed. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultUpdatedEventArgs.ProcessingTimeMicroSec">
+      <summary xml:lang="en"> Acquires the number of the processing time by the microsecond time scale. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultUpdatedEventArgs.TotalStatusResult">
+      <summary xml:lang="en"> Acquires the total status result, which is eigther OK(true) or NG(false). </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultUpdatedEventArgs.TriggerCount">
+      <summary xml:lang="en"> Acquires the total number of issued triggers. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultUpdatedEventArgs.SortingMatchedNo">
+      <summary xml:lang="en"> Acquires the number of the part with the highest matching value. An indefinite value is entered when the mode is not Sorting, or the total status result is not OK. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultUpdatedEventArgs.PositionAdjust">
+      <summary xml:lang="en"> Acquires the position adjust tool results. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultUpdatedEventArgs.Item(System.Byte)">
+      <summary xml:lang="en"> Acquires tool results. </summary>
+      <param name="toolNo" xml:lang="en"> The number of the tool. It must be between 1-64. </param>
+      <returns xml:lang="en"> Tool results of designated tool number. </returns>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultUpdatedEventArgs.PropetyList">
+      <summary xml:lang="en"> Acquires the array of the property name of <see cref="T:Keyence.IV3.Sdk.IVisionSensor" /> object that could have been changed. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.IVisionSensor">
+      <summary xml:lang="en"> This interface represents one IV3-Series Sensor. </summary>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.IVisionSensor.TickTack">
+      <summary xml:lang="en"> This function needs to be called up periodically. Cycle time must be less than one minute. </summary>
+      <exception cref="T:Keyence.IV3.Sdk.ConnectionLostException" xml:lang="en"> Thrown when application failed in connect with Sensor. </exception>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.IVisionSensor.Unlock(System.String)">
+      <summary xml:lang="en"> Unlock a security lock of the sensor when it is set. </summary>
+      <param name="password" xml:lang="en"> Login password srtring. </param>
+      <returns xml:lang="en"> It depends on whether it succeeds in unlocking or not. </returns>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.IVisionSensor.Lock">
+      <summary xml:lang="en"> Enable the security lock of the Sensor. </summary>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.IVisionSensor.SwitchProgramTo(Keyence.IV3.Sdk.ProgramHeader)">
+      <summary xml:lang="en"> Switch active program. </summary>
+      <param name="destinationProgram" xml:lang="en"> This is a program to be enabled. </param>
+      <exception cref="T:System.InvalidOperationException" xml:lang="en"> Thrown when switching program is disabled. </exception>
+      <exception cref="T:Keyence.IV3.Sdk.ConnectionLostException" xml:lang="en"> Thrown when application failed in connecting with the Sensor. </exception>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.IVisionSensor.Trigger">
+      <summary xml:lang="en"> Input trigger manually. </summary>
+      <exception cref="T:System.InvalidOperationException" xml:lang="en"> Thrown when manual trigger input is disabled. </exception>
+      <exception cref="T:Keyence.IV3.Sdk.ConnectionLostException" xml:lang="en"> Thrown when application failed in connecting with the Sensor. </exception>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.IVisionSensor.ClearError(Keyence.IV3.Sdk.SensorError)">
+      <summary xml:lang="en"> Clear errors that have occured in the Sensor. </summary>
+      <param name="occurredError" xml:lang="en"> The error trying to clear. </param>
+      <exception cref="T:Keyence.IV3.Sdk.ConnectionLostException" xml:lang="en"> Thrown when application failed in connecting with the Sensor. </exception>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.IVisionSensor.DrawWindow(System.Drawing.Graphics,System.Drawing.Color,System.Drawing.Color,System.Byte)">
+      <summary xml:lang="en"> Draw tool result window on a given <see cref="T:System.Drawing.Graphics" /> object. Size must be QVGA(1280x960). </summary>
+      <param name="graphics" xml:lang="en">
+        <see cref="T:System.Drawing.Graphics" /> object drawig tool result window. </param>
+      <param name="ok" xml:lang="en"> Color used to draw OK result. </param>
+      <param name="ng" xml:lang="en"> Color used to draw NG result. </param>
+      <param name="toolNo" xml:lang="en"> The Number of the tool to be drawn. 0 is for Position Adjust tool.</param>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.IVisionSensor.ImportSingleProgram(Keyence.IV3.Sdk.Iv3aReader,System.Int32,System.Int32)">
+      <summary xml:lang="en"> This imports the program setting information. </summary>
+      <param name="reader" xml:lang="en"> This class reads IV3A files. </param>
+      <param name="srcProgramNo" xml:lang="en"> This is the program number inside the IV3A file. Select between 0-31. For IV3A file with SD expansion, specify a value between 0-127. </param>
+      <param name="dstProgramNo" xml:lang="en"> This is the program number going to be sent. Select between 0-31. If SD expansion is used, specify a value between 0-127. </param>
+      <exception cref="T:System.ArgumentException" xml:lang="en"> This is thrown when the selected program number is invalid. </exception>
+      <exception cref="T:System.InvalidOperationException" xml:lang="en"> Thrown when not enough space is available for sensor programs, or when Iv3aReader could not be read or has already been disposed of. </exception>
+      <exception cref="T:Keyence.IV3.Sdk.Iv3aFileException" xml:lang="en"> This is thrown when failed to import the IV3A file. </exception>
+      <exception cref="T:Keyence.IV3.Sdk.ConnectionLostException" xml:lang="en"> Thrown when application failed in connect with Sensor. </exception>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.IVisionSensor.Dispose">
+      <summary xml:lang="en"> Call up this function to disconnect sensor. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.Programs">
+      <summary xml:lang="en"> Acquires the array of the overview of programs. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.ActiveProgram">
+      <summary xml:lang="en"> Acquires the details of the active program. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.Errors">
+      <summary xml:lang="en"> Acquires the array of the errors that has occured in the Sensor. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.PasswordRequired">
+      <summary xml:lang="en"> Acquires a value that indicates whether password is required. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.Unlocked">
+      <summary xml:lang="en"> Acquires a value that indicates whether the Sensor is unlocked. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.ExternalProgramSwitch">
+      <summary xml:lang="en"> Acquires a value that indicates whether external program switch is valid.</summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.EventEnable">
+      <summary xml:lang="en"> Acquires or sets a value that indicates the event generating state. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.ModelName">
+      <summary xml:lang="en"> Acquires the model name of the Sensor. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.DeviceName">
+      <summary xml:lang="en"> Acquires the device name of the Sensor. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.SensorVersion">
+      <summary xml:lang="en"> Acquires the version of the Sensor. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.IVisionSensor.SerialNo">
+      <summary xml:lang="en"> Acquires the serial number of the Sensor. </summary>
+    </member>
+    <member name="E:Keyence.IV3.Sdk.IVisionSensor.ImageAcquired">
+      <summary xml:lang="en"> Occurs when latest image has been updated. </summary>
+    </member>
+    <member name="E:Keyence.IV3.Sdk.IVisionSensor.ResultUpdated">
+      <summary xml:lang="en"> Occurs when running results have been updated. </summary>
+    </member>
+    <member name="E:Keyence.IV3.Sdk.IVisionSensor.ErrorStatusUpdated">
+      <summary xml:lang="en"> Occurs when sensor error status has been updated. </summary>
+    </member>
+    <member name="E:Keyence.IV3.Sdk.IVisionSensor.ProgramSettingsUpdated">
+      <summary xml:lang="en"> Occurs when active program settings have been updated. </summary>
+    </member>
+    <member name="E:Keyence.IV3.Sdk.IVisionSensor.Disposing">
+      <summary xml:lang="en"> Only for interal use. Please do not subscribe this event. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.VectorAreaItem">
+      <summary>tsVECTORAREAITEM</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.SensorRegisterSettingDetail">
+      <summary>tsSENSORREGISTERSETTINGDETAIL</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.PositionAdjustOperationSetting">
+      <summary>tsPOSITIONADJUSTOPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.DiameterSensorRegisterSetting">
+      <summary>tsDIAMETERSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyShapeResult">
+      <summary>tsCLASSIFYSHAPERESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyShapeRegisterSetting">
+      <summary>tsCLASSIFYSHAPEREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyColorAveOperationSetting">
+      <summary>tsCLASSIFY_COLOR_AVE_OPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.BlobResultItem">
+      <summary>tsBLOB_RESULT_ITEM</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.BlobModeConfig">
+      <summary>tsBLOB_MODE_CONFIG</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.ProgFileAccess">
+      <summary>tsPROG_FILE_ACCESS</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.MonitorVersion">
+      <summary>tsMONITOR_VERSION</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.FTPEachConfig">
+      <summary>tsFTPEachConfig</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ToolResultBase">
+      <summary xml:lang="en"> This class represents a tool result. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultBase.Ok">
+      <summary xml:lang="en"> Acquires a value indicating whether the judgment of the tool is OK. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultBase.Value">
+      <summary xml:lang="en"> Acquires the value of the matching rate. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultBase.Extend">
+      <summary xml:lang="en"> Acquires the running results. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolResultBase.Scaling">
+      <summary xml:lang="en"> Acquires the scaling result of the tool. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.Iv3aFileErrors">
+      <summary xml:lang="en"> This enumeration type represents the error type when failed to operate the IV3A file. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.Iv3aFileErrors.FileErrorsNone">
+      <summary xml:lang="en"> No error. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.Iv3aFileErrors.FileErrorsOpen">
+      <summary xml:lang="en"> Failed to open. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.Iv3aFileErrors.FileErrorsRead">
+      <summary xml:lang="en"> Failed to read. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.Iv3aFileErrors.FileErrorsIv3a">
+      <summary xml:lang="en"> It's an invalid IV3A file. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.Iv3aFileErrors.FileErrorsVersion">
+      <summary xml:lang="en"> New version. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.Iv3aFileErrors.FileErrorsCompatible">
+      <summary xml:lang="en"> Compatibility is NG. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.Iv3aFileErrors.FileErrorsHardware">
+      <summary xml:lang="en"> Hardware version is new. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.Iv3aFileErrors.FileErrorsUnkown">
+      <summary xml:lang="en"> Unknown error. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.RectArea">
+      <summary>tsRECT_AREA</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.PointL">
+      <summary>tsPOINTL</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.EdgePresenceThresholdWithHiSetting">
+      <summary>tsEDGEPRESENCE_THRESHOLDWITHHISETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.PositionAdjustResult">
+      <summary>tsPOSITIONADJUSTRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OneAxisPosAdjustResult">
+      <summary>tsONEAXISPOSADJUSTRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.InvasionAreaMonoSensorRegisterSetting">
+      <summary>tsINVASIONAREAMONOSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.InvasionAreaMonoSensorOperationSetting">
+      <summary>tsINVASIONAREAMONOSENSOROPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgePitchSensorResult">
+      <summary>tsEDGEPITCHSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.TcpCmdKind">
+      <summary>teTCP_CMD_KIND</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.TimeHm">
+      <summary>tsTIME_HM</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.OutSetting">
+      <summary>tsOUT_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.InSetting">
+      <summary>tsIN_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.InOut">
+      <summary>sInOut</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.DrawGetImageRequest">
+      <summary>tsDRAW_GET_IMAGE_REQUEST</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.DiameterSensorSetting">
+      <summary>tsDIAMETER_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ClassifyShapeSensorSetting">
+      <summary>tsCLASSIFY_SHAPE_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ClassifyColorAveSensorSetting">
+      <summary>tsCLASSIFY_COLOR_AVE_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.StateOption">
+      <summary>teSTATE_OPTION</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.SensorDetect">
+      <summary>teSENSOR_DETECT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.PositionControl">
+      <summary>tsPOSITIONCONTROL</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.BlobSensorResult">
+      <summary>tsBLOB_SENSOR_RESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.VectorAreaItemHeader">
+      <summary>tsVECTORAREAITEMHEADER</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.SensorRegisterSetting">
+      <summary>tsSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ScalingSetting">
+      <summary>tsSCALINGSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrSensorResultForDisp">
+      <summary>tsOCRSENSORRESULT_FOR_DISP</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrSensorResult">
+      <summary>tsOCRSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.NinePixelMapToOneBitBinaryImage">
+      <summary>ts9PIXELMAPTO1BITBINARYIMAGE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.InvasionAreaColorSensorResult">
+      <summary>tsINVASIONAREACOLORSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ColorAveSensorResult">
+      <summary>tsCOLORAVE_SENSOR_RESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyScalingDispSetting">
+      <summary>tsCLASSIFY_SCALINGDISPSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.SettingCompatibilityFile">
+      <summary>tsSETTING_COMPATIBILITY_FILE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.Iv3aFileAccessFile">
+      <summary>tsIV3A_FILE_ACCESS_FILE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommDataKind">
+      <summary>teCommdataKIND</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.SettingChangeInfo">
+      <summary>tsSETTING_CHANGE_INFO</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ClassifyDiameterSensorSetting">
+      <summary>tsCLASSIFY_DIAMETER_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ThumbnailImage">
+      <summary xml:lang="en"> This class represents the thumbnail image. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ThumbnailImage.ByteData">
+      <summary xml:lang="en"> Acquires image data as byte array. The size of the array is always 160x120x3(BGR order). </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.Iv3aReader">
+      <summary xml:lang="en"> This class is used to read IV3A files. </summary>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.Iv3aReader.#ctor(System.String)">
+      <summary xml:lang="en"> Create and Initialize a new instance of <see cref="T:Keyence.IV3.Sdk.Iv3aReader" />.  </summary>
+      <param name="filePath" xml:lang="en">This is the full pass of the IV3A file.  </param>
+      <exception cref="T:Keyence.IV3.Sdk.Iv3aFileException" xml:lang="en"> This is thrown when it failed to read IV3A files. </exception>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.Iv3aReader.Finalize">
+      <summary xml:lang="en"> Allows an <see cref="T:Keyence.IV3.Sdk.Iv3aReader" /> to attempt to free resources and perform other cleanup operations before the <see cref="T:Keyence.IV3.Sdk.Iv3aReader" /> is reclaimed by garbage collection. </summary>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.Iv3aReader.Dispose">
+      <summary xml:lang="en"> Disposes the resources used by <see cref="T:Keyence.IV3.Sdk.Iv3aReader" />. </summary>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.Iv3aReader.Close">
+      <summary xml:lang="en"> Closes the IV3A file. </summary>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.Iv3aReader.GetProgramDescriptionList">
+      <summary xml:lang="en"> Acquires the program setting information from the IV3A file. </summary>
+      <returns xml:lang="en"> Acquires the layout of the program setting information of the IV3A file. </returns>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Iv3aReader.Disposed">
+      <summary xml:lang="en"> Acquires if the object is disposed or not. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Iv3aReader.CanRead">
+      <summary xml:lang="en"> Acquires if this could be read or not. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.VsaKind">
+      <summary>teVSA_KIND</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ShapeSensorRegisterSetting">
+      <summary>tsSHAPESENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ShapeSensorOperationSetting">
+      <summary>tsSHAPESENSOROPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgeWidthSensorResult">
+      <summary>tsEDGEWIDTHSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.CsSensorResult">
+      <summary>tsCS_SENSOR_RESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyColorAveResult">
+      <summary>tsCLASSIFY_COLOR_AVE_RESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.Iv3aCompatibilityOutput">
+      <summary>tsIV3A_COMPATIBILITY_OUTPUT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.UdpCmdDirection">
+      <summary>teUDP_CMD_DIRECTION</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.EdgePixelEdgeData">
+      <summary>tsEDGE_PIXEL_EDGE_DATA</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.LogTransferTrig">
+      <summary>tsLOG_TRANSFER_TRIG</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ShapeSensorSetting">
+      <summary>tsSHAPE_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.SensorMachineInformation">
+      <summary>tsSENSOR_MACHINE_INFORMATION</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.RunningInfoSetting">
+      <summary>tsRUNNING_INFO_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.MachineName">
+      <summary>tsMACHINE_NAME</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.FTPConnectionConfig">
+      <summary>tsFTPConnectionConfig</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.Bank">
+      <summary>sBank</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.AreaMonoSensorSetting">
+      <summary>tsAREA_MONO_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.OcrStringLengthToolResult">
+      <summary xml:lang="en"> This class represents a OCR tool(number of characters) result. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringLengthToolResult.Value">
+      <summary xml:lang="en"> Acquires the value of the matching rate. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringLengthToolResult.Extend">
+      <summary xml:lang="en"> Acquires the running results. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringLengthToolResult.Scaling">
+      <summary xml:lang="en"> Acquires the scaling result of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringLengthToolResult.Ok">
+      <summary xml:lang="en"> Acquires a value indicating whether the judgment of the tool is OK. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringLengthToolResult.Read">
+      <summary xml:lang="en"> Acquires the number of reading result characters. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringLengthToolResult.MinLength">
+      <summary xml:lang="en"> Acquires the minimum number of master characters. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringLengthToolResult.MaxLength">
+      <summary xml:lang="en"> Acquires the maximum number of master characters. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.SizeW">
+      <summary>tsSIZEW</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.HighThresholdSetting">
+      <summary>teHITHRESHOLDSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.VectorAreaType">
+      <summary>teVECTORAREAITEM</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.PartOfTwoAxesresult">
+      <summary>tsPARTOFTWOAXESRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgePitchSensorRegisterSetting">
+      <summary>tsEDGEPITCHSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaMonoSensorResult">
+      <summary>tsAREACOLORSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaMonoSensorOperationSetting">
+      <summary>tsAREAMONOSENSOROPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaHsvThreshold">
+      <summary>tsAREAHSVTHRESHOLD</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaColorSensorOperationSetting">
+      <summary>tsAREACOLORSENSOROPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.FlipReqIndex">
+      <summary>teFLIP_REQ_INDEX</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.SetUp">
+      <summary>tsSETUP</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.SdStatusBit">
+      <summary>teSD_STATE_BIT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ScreenArea">
+      <summary>tsSCREEN_AREA</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.OneAxisPosadjustSensorSetting">
+      <summary>tsONE_AXIS_POSADJUST_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.OcrSensorSetting">
+      <summary>tsOCR_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.MacAddress">
+      <summary>tsMAC_ADDRESS</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.FTPCommonConfig">
+      <summary>tsFTPCommonConfig</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.EdgePresenceSensorSetting">
+      <summary>tsEDGE_PRESENCE_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ColorAveSensorRunningInfo">
+      <summary>tsCOLORAVE_SENSOR_RUNNING_INFO</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.CmosType">
+      <summary>teCMOS_TYPE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.WindowShape">
+      <summary xml:lang="en"> This class represents window shapes. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.WindowShape.Center">
+      <summary xml:lang="en"> Acquires the center coordinate(pixel) of a window. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.WindowShape.Angle">
+      <summary xml:lang="en"> Acquires a rotation angle(degree) of a window. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ImageAcquiredEventArgs">
+      <summary xml:lang="en"> This class represents an argument of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ImageAcquired" /> event. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ImageAcquiredEventArgs.LiveImage">
+      <summary xml:lang="en"> Acquires the latest live image. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ImageAcquiredEventArgs.PropetyList">
+      <summary xml:lang="en"> Acquires the array of the property name of <see cref="T:Keyence.IV3.Sdk.IVisionSensor" /> object that could have been changed. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.Iv3aFileException">
+      <summary xml:lang="en"> The Exception is thrown when IV3A files are failed to be operated. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Iv3aFileException.ErrorCode">
+      <summary xml:lang="en"> Acquires the error code. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.SensorResult">
+      <summary>tsSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.SensorOperationSettingDetail">
+      <summary>tsSENSOROPERATIONSETTINGDETAIL</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OneAxisPosAdjustSensorRegisterSetting">
+      <summary>tsONEAXISPOSADJUSTREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrLetterThre">
+      <summary>tsOCR_LETTER_THRE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.MatchPercentOfEachHsv">
+      <summary>tsMATCH_PERCENT_OF_EACH_HSV</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgeWidthSensorRegisterSetting">
+      <summary>tsEDGEWIDTHSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgeInfo">
+      <summary>tsEDGEINFO</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.CountSensorResult">
+      <summary>tsCOUNTSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ColorToleranceSetting">
+      <summary>tsCOLOR_TOLERANCE_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyShapeOperationSetting">
+      <summary>tsCLASSIFYSHAPEOPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyDiameterResult">
+      <summary>tsCLASSIFY_DIAMETER_RESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.MonoBlobCountSensorSetting">
+      <summary>tsMONO_BLOB_COUNT_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.SummaryOfTool">
+      <summary>tsVSA_SUMMARY</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.SensorSetting">
+      <summary>tsSENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.BankName">
+      <summary>tsBANK_NAME</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.BankSettingVsa">
+      <summary>tsBANK_SETTING_VSA_FOR_APL</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.VisionSensorMode">
+      <summary>teVISIONSENSOR_MODE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.ThresholdWithHiSetting">
+      <summary>tsTHRESHOLDWITHHISETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.BlobSensorOperationSetting">
+      <summary>tsBLOB_SENSOR_OPERATION_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ShapeSensorResult">
+      <summary>tsSHAPESENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.PositionAdjustRegisterSetting">
+      <summary>tsPOSITIONADJUSTREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.MonoAveSensorRegisterSetting">
+      <summary>tsCOLORAVE_SENSOR_REGISTER_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.InvasionAreaMonoSensorResult">
+      <summary>tsINVASIONAREAMONOSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ColorAveSensorOperationSetting">
+      <summary>tsCOLORAVE_SENSOR_OPERATION_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.EepromDevice">
+      <summary>tsEEPROM_DEVICE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.DrawImageData">
+      <summary>tsDRAW_IMAGE_DATA</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.VisionSensorSystemSetting">
+      <summary>tsVISIONSENSOR_SYSTEM_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.VisionSensorError">
+      <summary>sVisionSensorError</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.PositionAdjustSetting">
+      <summary>tsPOSITION_ADJUST_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.PictureSetting">
+      <summary>tsPICTURE_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.LightAdjustSetting">
+      <summary>tsLIGHT_ADJUST_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.InvasionAreaColorSensorSetting">
+      <summary>tsINVASION_AREA_COLOR_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.Histogram">
+      <summary>tsHISTOGRAM</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.OcrTargetType">
+      <summary xml:lang="en"> Read target setting of the OCR. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.OcrTargetType.Character">
+      <summary xml:lang="en"> Reading target is Characters. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.OcrTargetType.CharacterNumber">
+      <summary xml:lang="en"> Reading target is Number of characters. </summary>
+    </member>
+    <member name="F:Keyence.IV3.Sdk.OcrTargetType.Date">
+      <summary xml:lang="en"> Reading target is Date. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.PointW">
+      <summary>tsPOINTW</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.BlobAreaThreshold">
+      <summary>tsBLOB_AREA_THRESHOLD</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.CoordOpeSetting">
+      <summary>tsCOORDOPESETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaRegisterRecord">
+      <summary>tsAREAREGISTERRECORD</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.Iv3aFileAccess">
+      <summary>tsIV3A_FILE_ACCESS</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.Iv3aCompatibilityInput">
+      <summary>tsIV3A_COMPATIBILITY_INPUT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.MasterIamgeName">
+      <summary>tsMASTER_IAMGE_NAME</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ImageAcquiredEventHandler">
+      <summary xml:lang="en"> This delegate represents a signature of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ImageAcquired" /> event handler. </summary>
+      <param name="sender" xml:lang="en"> The source of the event. </param>
+      <param name="e" xml:lang="en"> An argument of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ImageAcquired" /> event that includes the latest image. </param>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ProgramDescription">
+      <summary xml:lang="en"> This class represents a details of the program. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramDescription.ProgramName">
+      <summary xml:lang="en"> Acquires the name of the program. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramDescription.ProgramNo">
+      <summary xml:lang="en"> Acquires the number of the program. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramDescription.ExternalTrigger">
+      <summary xml:lang="en"> Acquires a value that indicates whether trigger is external(true) or internal(false). </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramDescription.TriggerCycleMilliSec">
+      <summary xml:lang="en"> Acquires the number of the trigger cycle by the millisecond time scale. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramDescription.PositionAdjustSetting">
+      <summary xml:lang="en"> Acquires the PositionAdjust tool settings. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramDescription.Item(System.Byte)">
+      <summary xml:lang="en"> Acquires the tool settings. </summary>
+      <param name="toolNo" xml:lang="en"> The number of the tool. It must be between 1-64. </param>
+      <returns xml:lang="en"> Tool settings of designated tool number. </returns>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramDescription.MasterImage">
+      <summary xml:lang="en"> Acquires the Master Image. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramDescription.IsSortingMode">
+      <summary xml:lang="en"> Acquires a value that indicates whether the program is in Sorting mode (true) or Standard mode (false). </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ErrorDetectedEventArgs">
+      <summary xml:lang="en"> This class represents the argument of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ErrorStatusUpdated" /> event. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ErrorDetectedEventArgs.PropetyList">
+      <summary xml:lang="en"> Acquires the array of the property name of <see cref="T:Keyence.IV3.Sdk.IVisionSensor" /> object that could have been changed. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.BrightnessAverageToolResult">
+      <summary xml:lang="en"> This class represents a Brightness Average tool result. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BrightnessAverageToolResult.Value">
+      <summary xml:lang="en"> Acquires the value of the matching rate. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BrightnessAverageToolResult.Extend">
+      <summary xml:lang="en"> Acquires the running results. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BrightnessAverageToolResult.Scaling">
+      <summary xml:lang="en"> Acquires the scaling result of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BrightnessAverageToolResult.Ok">
+      <summary xml:lang="en"> Acquires a value indicating whether the judgment of the tool is OK. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BrightnessAverageToolResult.Brightness">
+      <summary xml:lang="en"> Acquires the Brightness. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.ThumbnailImage">
+      <summary>tuTHUMBNAIL_IMAGE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrResultStr">
+      <summary>tsOCR_RESULT_STR</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrReadResult">
+      <summary>tsOCR_READ_RESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.InvasionAreaColorSensorRegisterSetting">
+      <summary>tsINVASIONAREACOLORSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.DiameterScore">
+      <summary>teDIAMETER_SCORE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.CircleDetectedDetail">
+      <summary>tsCIRCLE_DETECTED_DETAIL</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Error.ErrorLevels">
+      <summary>teERROR_LEVELS</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.SettingCompatibility">
+      <summary>tsSETTING_COMPATIBILITY</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.FileHeader">
+      <summary>tsFILE_HEADER</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.VsaRunningInfo">
+      <summary>tsVSA_RUNNING_INFO</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.VisionSensorState">
+      <summary>tsVISIONSENSOR_STATE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.Drawrectl">
+      <summary>tsDRAW_RECTL</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.CsSensorSetting">
+      <summary>tsCS_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.AreaColorSensorSetting">
+      <summary>tsAREA_COLOR_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.VectoreAreaItemCircle">
+      <summary>tsVECTORAREAITEMCIRCLE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.TrapezoidAdjust">
+      <summary>tsTRAPEZOID_ADJUST</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.DiameterValidArea">
+      <summary>tsDIAMETER_VALID_AREA</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.FocusDistance">
+      <summary>teFOCUS_DISTANCE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.CommonConstants">
+      <summary>Common.h</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.Utility">
+      <summary>sUtility</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.TwoAxesPosadjustSensorSetting">
+      <summary>tsTWO_AXES_POSADJUST_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.Summary">
+      <summary>tsSUMMARY</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.StructTpCalib">
+      <summary>TpCalib</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.EdgePixelCountSensorSetting">
+      <summary>tsEDGE_PIXEL_COUNT_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.DrawCameraImageRequest">
+      <summary>tsDRAW_CAMERA_IMAGE_REQUEST</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.CheckRegisterImageKindEnum">
+      <summary>teCHECK_REGISETR_IMAGE_KIND</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.BankSettingCommon">
+      <summary>tsBANK_SETTING_COMMON_FOR_APL</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.SensorError">
+      <summary xml:lang="en"> This class represents a sensor error. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.SensorError.ErrorCode">
+      <summary xml:lang="en"> Acquires the internal error number. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.SensorError.Description">
+      <summary xml:lang="en"> Acquires the error details. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.SensorError.ProgramaticallyClearable">
+      <summary xml:lang="en"> Acquires a value indicating whether this error can be cleared. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.SensorError.Sustainable">
+      <summary xml:lang="en"> Acquires a value indicating whether connection can be sustained. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.BlobCountToolResult">
+      <summary xml:lang="en"> This class represents a BLOB tool result. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BlobCountToolResult.Value">
+      <summary xml:lang="en"> Acquires the value of the matching rate. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BlobCountToolResult.Extend">
+      <summary xml:lang="en"> Acquires the running results. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BlobCountToolResult.Scaling">
+      <summary xml:lang="en"> Acquires the scaling result of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BlobCountToolResult.Ok">
+      <summary xml:lang="en"> Acquires a value indicating whether the judgment of the tool is OK. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BlobCountToolResult.SizeOk">
+      <summary xml:lang="en"> Acquires the sizeOK count. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.BlobCountToolResult.SizeNg">
+      <summary xml:lang="en"> Acquires the sizeNG count. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.VisionSensorStateEnum">
+      <summary>teVISIONSENSOR_STATE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.BlobMatchPercentLimitSetting">
+      <summary>teBLOB_MATCH_PERCENT_LIMIT_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.QuadrangleFourCouners">
+      <summary>tsQuadrangleFourCouners</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrSensorRegisterSetting">
+      <summary>tsOCRSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrDateJudge">
+      <summary>tsOCR_DATE_JUDGE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrDateFormat">
+      <summary>tsOCR_DATE_FORMAT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.MasterColorSetting">
+      <summary>tsMASTER_COLOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgePixelCountSensorResult">
+      <summary>tsEDGEPIXELCOUNTSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyEdgeWidthResult">
+      <summary>tsCLASSIFY_EDGE_WIDTH_RESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyEdgeWidthOperationSetting">
+      <summary>tsCLASSIFY_EDGE_WIDTH_OPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.BlobSensorRegisterSetting">
+      <summary>tsBLOB_SENSOR_REGISTER_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaColorSensorRegisterSetting">
+      <summary>tsAREACOLORSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.DeviceSeriesVersion">
+      <summary>teDEVICE_SERIES_VERSION</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommImageInfo">
+      <summary>tsCOMM_IMAGE_INFO</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommHeader">
+      <summary>tsCOMM_HEADER</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.VisionSensorStore">
+      <summary xml:lang="en"> This class creates <see cref="T:Keyence.IV3.Sdk.IVisionSensor" /> object. </summary>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.VisionSensorStore.#ctor">
+      <summary xml:lang="en"> Create and Initialize a new instance of <see cref="T:Keyence.IV3.Sdk.VisionSensorStore" />. </summary>
+      <remarks xml:lang="en"> If a <see cref="T:Keyence.IV3.Sdk.VisionSensorStore" /> object is already created and is not be disposed in a certain thread, creating a new instanciation in another thread will fail. </remarks>
+      <exception cref="T:System.ApplicationException" xml:lang="en"> Thrown when tried to activate multiple monitors (including SDK) . </exception>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.VisionSensorStore.Dispose">
+      <summary xml:lang="en"> Disposes the resources used by <see cref="T:Keyence.IV3.Sdk.VisionSensorStore" />. </summary>
+      <remarks xml:lang="en"> When one thread disposes all <see cref="T:Keyence.IV3.Sdk.VisionSensorStore" /> instances, another thread become able to create new <see cref="T:Keyence.IV3.Sdk.VisionSensorStore" /> instance. </remarks>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.VisionSensorStore.Create(System.Net.IPAddress,System.UInt16)">
+      <summary xml:lang="en"> Creates <see cref="T:Keyence.IV3.Sdk.IVisionSensor" /> Object with specified network settings. </summary>
+      <param name="ipAddress" xml:lang="en"> It is an IPAddress of sensor. </param>
+      <param name="portNo" xml:lang="en"> It is a Port No. of sensor. </param>
+      <returns xml:lang="en"> A new <see cref="T:Keyence.IV3.Sdk.IVisionSensor" /> Instance that has been created. </returns>
+      <exception cref="T:System.InvalidOperationException" xml:lang="en"> Thrown when tried to create same <see cref="T:Keyence.IV3.Sdk.IVisionSensor" /> instance before disposing it. </exception>
+      <exception cref="T:Keyence.IV3.Sdk.ConnectionLostException" xml:lang="en"> Thrown when application failed in connecting with the Sensor. </exception>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.VisionSensorStore.StartPoint">
+      <summary xml:lang="en"> Acquires or sets an client(PC side) IPAddress. </summary>
+      <exception cref="T:System.ArgumentException" xml:lang="en"> Thrown when designated IPAddress client can not be recognized. </exception>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ToolScalingResult">
+      <summary xml:lang="en"> This class represents the scaling result of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolScalingResult.Enabled">
+      <summary xml:lang="en"> Acquires if the scaling setting is done or not. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolScalingResult.Value1">
+      <summary xml:lang="en"> Acquires tool running result 1. The bottom 3 numbers are the decimal part. Minimum of each pitch. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolScalingResult.Value2">
+      <summary xml:lang="en"> Acquires tool running result 2. The bottom 3 numbers are the decimal part. Maximum of each pitch. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ToolExtendResult">
+      <summary xml:lang="en"> This class represents the running results. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolExtendResult.Enabled">
+      <summary xml:lang="en"> Acquires the result if the running result is valid. Pitch is only true. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolExtendResult.Value1">
+      <summary xml:lang="en"> Acquires the running result 1. The minimum pitch. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolExtendResult.Value2">
+      <summary xml:lang="en"> Acquires the running result 2. The maximum pitch. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.VsData">
+      <summary>teVSDATA</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.SensorMode">
+      <summary>tSENSOR_MODE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.SensorJudgeResult">
+      <summary>teSENSORJUDGERESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.ClassifyThreshold">
+      <summary>tsCLASSIFY_THRESHOLD</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.VectorAreaItems">
+      <summary>tsVECTORAREAITEMS</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.TwoAxesPosAdjustSensorRegisterSetting">
+      <summary>tsTWOAXESPOSADJUSTREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ScalingDispSetting">
+      <summary>tsSCALINGDISPSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OneAxisPosAdjustSensorOperationSetting">
+      <summary>tsONEAXISPOSADJUSTOPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrSensorOperationSetting">
+      <summary>tsOCRSENSOROPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrLetterJudge">
+      <summary>tsOCR_LETTER_JUDGE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ColorAveSensorRegisterSetting">
+      <summary>tsCOLORAVE_SENSOR_REGISTER_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AngleOpeSetting">
+      <summary>tsANGLEOPESETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.SimulatorInfo">
+      <summary>tsSIMULATOR_INFO</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.SntpcSetting">
+      <summary>tsSNTPC_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.Security">
+      <summary>sSecurity</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.MachineSpecConst">
+      <summary>tsMACHINE_SPEC_CONST</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.FTPConfig">
+      <summary>tsFTPConfig</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.CsSensorImageIndex">
+      <summary>tsCS_SENSOR_IMAGE_INDEX</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ErrorDetectedEventHandler">
+      <summary xml:lang="en"> This delegate represents the signature of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ErrorStatusUpdated" /> event handler. </summary>
+      <param name="sender" xml:lang="en"> The source of the event. </param>
+      <param name="e" xml:lang="en"> An argument of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ErrorStatusUpdated" /> event. </param>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ColorAverageToolResult">
+      <summary xml:lang="en"> This class represents a Color Average tool result. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ColorAverageToolResult.Value">
+      <summary xml:lang="en"> Acquires the value of the matching rate. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ColorAverageToolResult.Extend">
+      <summary xml:lang="en"> Acquires the running results. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ColorAverageToolResult.Scaling">
+      <summary xml:lang="en"> Acquires the scaling result of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ColorAverageToolResult.Hsv">
+      <summary xml:lang="en"> Acquires the Hsv result of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ColorAverageToolResult.Ok">
+      <summary xml:lang="en"> Acquires a value indicating whether the judgment of the tool is OK. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ProgramSettingsUpdatedEventHandler">
+      <summary xml:lang="en"> This delegate represents a signature of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ProgramSettingsUpdated" /> event handler. </summary>
+      <param name="sender" xml:lang="en"> The source of the event. </param>
+      <param name="e" xml:lang="en"> An argument of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ProgramSettingsUpdated" /> event. </param>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ProgramSettingsUpdatedEventArgs">
+      <summary xml:lang="en"> This class represents an argument of <see cref="E:Keyence.IV3.Sdk.IVisionSensor.ProgramSettingsUpdated" /> event. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramSettingsUpdatedEventArgs.PropetyList">
+      <summary xml:lang="en"> Acquires the array of the property name of <see cref="T:Keyence.IV3.Sdk.IVisionSensor" /> object that could have been changed. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ProgramHeader">
+      <summary xml:lang="en"> This class represents a overview of the program. </summary>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.ProgramHeader.ToString">
+      <summary xml:lang="en"> Acquires a String containing the number and name of the program. </summary>
+      <returns xml:lang="en"> String containing the number and name of the program. </returns>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramHeader.ProgramName">
+      <summary xml:lang="en"> Acquires the name of the program. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramHeader.ProgramNo">
+      <summary xml:lang="en"> Acquires the number of the program. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramHeader.ExternalTrigger">
+      <summary xml:lang="en"> Acquires a value that indicates whether trigger is external(true) or internal(false). </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ProgramHeader.TriggerCycleMilliSec">
+      <summary xml:lang="en"> Acquires the number of the trigger cycle on the millisecond time scale. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.Iv3aProgramDescription">
+      <summary xml:lang="en"> This class represents the program setting information of the IV3A file. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Iv3aProgramDescription.ProgramNo">
+      <summary xml:lang="en"> Acquires the number of the program. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Iv3aProgramDescription.ProgramName">
+      <summary xml:lang="en"> Acquires the name of the program. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Iv3aProgramDescription.Configured">
+      <summary xml:lang="en"> Acquires the information if the setting is done or not. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Iv3aProgramDescription.MasterAvailable">
+      <summary xml:lang="en"> Acquires the information if the master image is registered or not. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.Iv3aProgramDescription.ThumbnailImage">
+      <summary xml:lang="en"> Acquires the thumbnail image of the master image. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.VisionSensorType">
+      <summary>teVISIONSENSOR_TYPE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Basis.Hsv">
+      <summary>tsHSV</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.YCoordOpeSetting">
+      <summary>tsYCOORDOPESETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OneOfTwoAxesResult">
+      <summary>tsONEOFTWOAXESRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrDateThre">
+      <summary>tsOCR_DATE_THRE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.CsSensorOperationSetting">
+      <summary>tsCS_SENSOR_OPERATION_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.CountSensorOperationSetting">
+      <summary>tsCOUNTSENSOROPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaHsvThre">
+      <summary>teAREAHSVTHRE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.InvasionAreaMonoSensorSetting">
+      <summary>tsINVASION_AREA_MONO_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ClassifyEdgeWidthSensorSetting">
+      <summary>tsCLASSIFY_EDGE_WIDTH_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.DomainLayer.ExternalMedia.IvFile.FileTop">
+      <summary>FILE_TOP</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ToolHsvResult">
+      <summary xml:lang="en"> This class represents the Hsv result of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolHsvResult.Hue">
+      <summary xml:lang="en"> Acquires the Hue. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolHsvResult.Saturation">
+      <summary xml:lang="en"> Acquires the Saturation. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolHsvResult.Value">
+      <summary xml:lang="en"> Acquires the ValueBrightness. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.XCoordOpeSetting">
+      <summary>tsXCOORDOPESETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.OcrCharLimit">
+      <summary>tsOCR_CHAR_LIMIT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.InvasionAreaColorSensorOperationSetting">
+      <summary>tsINVASIONAREACOLORSENSOROPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgeDesignAction">
+      <summary>tsEDGEDESIGNATION</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.HardwareVersion">
+      <summary>teHARDWARE_VERSION</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Error.ErrI">
+      <summary>teERRI</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.SimulatorInfoFile">
+      <summary>tsSIMULATOR_INFO_FILE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ColorBlobCountSensorSetting">
+      <summary>tsCOLOR_BLOB_COUNT_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.SettingVersion">
+      <summary>tsSETTING_VERSION</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ReservedSensorSetting">
+      <summary>tsRESERVED_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.EdgeWidthSensorSetting">
+      <summary>tsEDGE_WIDTH_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.AvailableNicExplorer">
+      <summary xml:lang="en"> This class is used to search available NICs. </summary>
+    </member>
+    <member name="M:Keyence.IV3.Sdk.AvailableNicExplorer.GetClients">
+      <summary xml:lang="en"> Acquires the list of the available client (PC side) NICs. </summary>
+      <returns xml:lang="en"> This is a list of the client IPAddress candidates. </returns>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ToolScalingSetting">
+      <summary xml:lang="en"> This class represents the scaling setting of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolScalingSetting.Enabled">
+      <summary xml:lang="en"> Acquires if the scaling setting is done or not. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolScalingSetting.MaxValue">
+      <summary xml:lang="en"> Acquires the maximum result of the tool result. The bottom 3 numbers are the decimal part. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolScalingSetting.MinValue">
+      <summary xml:lang="en"> Acquires the minimum result of the tool result. The bottom 3 numbers are the decimal part. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolScalingSetting.OkMaxValue">
+      <summary xml:lang="en"> Acquires the upper limit of the tool result. The bottom 3 numbers are the decimal part. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.ToolScalingSetting.OkMinValue">
+      <summary xml:lang="en"> Acquires the lower limit of the tool result. The bottom 3 numbers are the decimal part. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.TcpConnectModeEnum">
+      <summary>teTCP_CONNECT_MODE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.VectorAreaItemRectangle">
+      <summary>tsVECTORAREAITEMRECTANGLE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.SensorOperationSetting">
+      <summary>tsSENSOROPERATIONSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgeWidthSensorMask">
+      <summary>tsEDGEWIDTHSENSORMASK</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgePresenceSensorRegisterSetting">
+      <summary>tsEDGEPRESENCESENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgePresenceSensorMask">
+      <summary>tsEDGEPRESENCESENSORMASK</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.CsSensorRegisterSetting">
+      <summary>tsCS_SENSOR_REGISTER_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.CountSensorRegisterSetting">
+      <summary>tsCOUNTSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyDiameterOperationSetting">
+      <summary>tsCLASSIFY_DIAMETER_OPERATION_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaExtractHsvSetting">
+      <summary>tsAREAEXTARCTHSVSETTINGS</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Conf.EepromDataFile">
+      <summary>tsEEPROM_DEVICE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.EdgePitchSensorSetting">
+      <summary>tsEDGE_PITCH_SENSOR_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.AutoBankSwitchSetting">
+      <summary>tsAUTO_BANK_SWITCH_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.BankBrief">
+      <summary>tsBANK_LIST_FOR_APL</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.ConnectionLostException">
+      <summary xml:lang="en"> The Exception that is thrown when application lost connection with sensor. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.OcrStringToolResult">
+      <summary xml:lang="en"> This class represents a OCR tool(characters) result. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringToolResult.Value">
+      <summary xml:lang="en"> Acquires the value of the matching rate. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringToolResult.Extend">
+      <summary xml:lang="en"> Acquires the running results. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringToolResult.Scaling">
+      <summary xml:lang="en"> Acquires the scaling result of the tool. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringToolResult.Ok">
+      <summary xml:lang="en"> Acquires a value indicating whether the judgment of the tool is OK. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringToolResult.Master">
+      <summary xml:lang="en"> Acquires the master characters/date. </summary>
+    </member>
+    <member name="P:Keyence.IV3.Sdk.OcrStringToolResult.Read">
+      <summary xml:lang="en"> Acquires the reading result string. </summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.ThumbnailMonoImage">
+      <summary>tuTHUMBNAIL_MONO_IMAGE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.ThumbnailColorImage">
+      <summary>tuTHUMBNAIL_COLOR_IMAGE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ShapeSearchResultItem">
+      <summary>tsSHAPESEARCHRESULTITEM</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ResultOfEachHsv">
+      <summary>tsRESULT_OF_EACH_HSV</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgePixelExtract">
+      <summary>tsEDGEPIXELEXTRACT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgePixelCountSensorRegisterSetting">
+      <summary>tsEDGEPIXELCOUNTSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.EdgeMaskRectangle">
+      <summary>tsEDGEMASKRECTANGLE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.ClassifyScalingSetting">
+      <summary>tsCLASSIFY_SCALINGSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.CircleDetect">
+      <summary>tsCIRCLE_DETECT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaMonoSensorRegisterSetting">
+      <summary>tsAREACOLORSENSORREGISTERSETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Include.Algorithm.ImageProcessTypes.AreaColorSensorResult">
+      <summary>tsAREACOLORSENSORRESULT</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.StructSize">
+      <summary>tsSTRUCT_SIZE</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.Option">
+      <summary>CCommandOption</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.TriggerSetting">
+      <summary>tsTRIGGER_SETTING</summary>
+    </member>
+    <member name="T:Keyence.IV3.Sdk.InfraLayer.Common.Command.CommandData.ModelName">
+      <summary>tsMODEL_NAME</summary>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\obj\Debug\IV3_CESAT.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\obj\Debug\IV3_CESAT.Form1.resources
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\obj\Debug\IV3_CESAT.Properties.Resources.resources
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\obj\Debug\IV3_CESAT.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\obj\Debug\IV3_CESAT.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\bin\Debug\IV3_CESAT.exe.config
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\bin\Debug\IV3_CESAT.exe
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\bin\Debug\IV3_CESAT.pdb
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\bin\Debug\Keyence.IV3.Sdk.dll
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\bin\Debug\Keyence.IV3.Sdk.xml
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\obj\Debug\IV3_CESAT.csproj.CopyComplete
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\obj\Debug\IV3_CESAT.exe
+C:\Users\Admin\source\repos\IV3_CESAT\IV3_CESAT\obj\Debug\IV3_CESAT.pdb
